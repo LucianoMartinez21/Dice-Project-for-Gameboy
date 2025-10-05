@@ -7,8 +7,16 @@ Things to fix are:
 ## How get a .gb file?
 
 1. Clone or Download the project.
-2. Using a terminal inside the project's folder execute the make command.
-
+2. Clone or Download the DBDK.
+https://github.com/gbdk-2020/gbdk-2020/
+3. Change the Makefile to address the location of GBDK files
+```Make
+ifndef GBDK_HOME
+	GBDK_HOME = ../{your_folder}/gbdk/
+endif
+LCC = $(GBDK_HOME)bin/lcc 
+```
+4. Using a terminal inside the project's folder execute the make command.
 ```bash
 make
 ```
