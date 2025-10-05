@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include "../res/TestMenu.h"
 #include "../res/FinalMenu.h"
-#include "../res/ExampleMenu.h"
 #include "../res/DiceSprites.h"
 #include "Dice.h"
 #include "globals.h"
